@@ -21,8 +21,10 @@ class _InputPageState extends State<InputPage> {
       ),
 
       backgroundColor: const Color(0xFFF2F2F2),
+
       body: Padding(
         padding: const EdgeInsets.all(20),
+
         child: ListView(
           children: [
 
@@ -33,6 +35,7 @@ class _InputPageState extends State<InputPage> {
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.grey.shade400),
               ),
+
               child: Row(
                 children: [
                   Icon(Icons.title, color: Colors.teal),
@@ -44,6 +47,7 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
+
             const SizedBox(height: 15),
 
             Container(
@@ -53,6 +57,7 @@ class _InputPageState extends State<InputPage> {
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all(color: Colors.grey.shade400),
               ),
+              
               child: Row(
                 children: [
                   Icon(Icons.attach_money, color: Colors.teal),
@@ -64,6 +69,7 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
+
             const SizedBox(height: 15),
 
             Container(
@@ -84,10 +90,12 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
+
             const SizedBox(height: 30),
 
             ElevatedButton.icon(
               onPressed: () {
+
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
@@ -97,7 +105,8 @@ class _InputPageState extends State<InputPage> {
                   ),
                 );
               },
-              icon: Icon(Icons.save),
+              
+              icon: Icon(Icons.save, color: Colors.grey,),
               label: Text("Simpan"),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.teal,

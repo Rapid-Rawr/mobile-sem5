@@ -17,26 +17,25 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-
 class BottomNavMain extends StatefulWidget {
   @override
   _BottomNavMainState createState() => _BottomNavMainState();
 }
 
 class _BottomNavMainState extends State<BottomNavMain> {
-  int _selectedIndex = 1; // 0: Input, 1: Dashboard, 2: History
+  int _selectedIndex = 1; 
 
-  // daftar halaman
+  
   final List<Widget> _pages = [
     InputPage(),
     DashboardPage(),
-    HistoryPage(),
+    // HistoryPage(),
   ];
+
 
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index; // ubah tampilan halaman
+      _selectedIndex = index; 
     });
   }
 
@@ -47,11 +46,13 @@ class _BottomNavMainState extends State<BottomNavMain> {
 
       // Bottom navigation bar
       bottomNavigationBar: BottomNavigationBar(
+
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         backgroundColor: Colors.white,
         selectedItemColor: Colors.teal,
         unselectedItemColor: Colors.grey,
+
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.add_circle_outline),
@@ -61,10 +62,10 @@ class _BottomNavMainState extends State<BottomNavMain> {
             icon: Icon(Icons.dashboard),
             label: "Dashboard",
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.history),
-            label: "History",
-          ),
+          // BottomNavigationBarItem(
+          //   icon: Icon(Icons.history),
+          //   label: "History",
+          // ),
         ],
       ),
     );

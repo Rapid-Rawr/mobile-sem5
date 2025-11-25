@@ -4,29 +4,22 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF52B7A5), 
-
+      backgroundColor: const Color(0xFF52B7A5),
       appBar: AppBar(
         backgroundColor: const Color(0xFF52B7A5),
-        // elevation: 0,
-
         title: const Text(
           "Halo bg",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-
         actions: const [
           Padding(
             padding: EdgeInsets.only(right: 12),
             child: Icon(Icons.nightlight_round, color: Colors.white),
           ),
         ],
-
       ),
-
       body: ListView(
         children: [
-
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
@@ -70,9 +63,6 @@ class DashboardPage extends StatelessWidget {
                           TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(width: 6),
-                    Text("0%",
-                        style: TextStyle(
-                            color: Colors.orange, fontWeight: FontWeight.bold))
                   ],
                 ),
 
@@ -81,7 +71,6 @@ class DashboardPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: const [
-
                     Column(
                       children: [
                         Icon(Icons.credit_card, color: Colors.teal),
@@ -90,14 +79,12 @@ class DashboardPage extends StatelessWidget {
                             style: TextStyle(fontWeight: FontWeight.bold))
                       ],
                     ),
-
                     Column(
                       children: [
                         Icon(Icons.warning, color: Colors.red),
                         Text("Coba lagi"),
                       ],
                     ),
-
                     Column(
                       children: [
                         Icon(Icons.wallet, color: Colors.brown),
@@ -115,14 +102,17 @@ class DashboardPage extends StatelessWidget {
           const SizedBox(height: 20),
 
           Container(
+
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(15),
             ),
+
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
+
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -132,6 +122,7 @@ class DashboardPage extends StatelessWidget {
                     Text("make it or break it"),
                   ],
                 ),
+
                 Icon(Icons.arrow_forward_ios, size: 18),
               ],
             ),
@@ -189,8 +180,6 @@ class DashboardPage extends StatelessWidget {
           //     ),
           //   ),
           // ),
-
-
         ],
       ),
     );
